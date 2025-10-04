@@ -1,5 +1,5 @@
-import { Book } from './types/Book';
-import { LibraryBook } from './types/LibraryBook';
+import type { Book } from './types/Book.js';
+import { LibraryBook } from './types/LibraryBook.js';
 
 const book1: Book = { title: 'Братья Карамазовы', author: 'Ф. М. Достоевский', year: 1880 };
 const book2: Book = { title: 'Идиот', author: 'Ф. М. Достоевский', year: 1869 };
