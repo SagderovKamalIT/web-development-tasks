@@ -1,7 +1,6 @@
 {
   "name": "seminar-04-10",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
   "devDependencies": {
@@ -9,11 +8,11 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "npx tsc index.ts && node index",
-    "start": "ts-node index.ts",
-    "build": "tsc"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "transpile": "npx tsc index.ts && node index.js",
+  "start": "ts-node index.ts",
+  "build": "tsc"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SagderovKamalIT/seminar-04-10.git"
