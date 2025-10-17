@@ -1,14 +1,18 @@
 import type { Book } from './types/Book';
-import { LibraryBook } from './types/LibraryBook';
+import { Repository } from './types/Repository';
+import { updateBook, getReadonlyBooks } from './types/Helpers';
 
 const book1: Book = { title: 'Братья Карамазовы', author: 'Ф. М. Достоевский', year: 1880 };
 const book2: Book = { title: 'Идиот', author: 'Ф. М. Достоевский', year: 1869 };
-const book3: Book = { title: 'Бесы', author: 'Ф. М. Достоевский', year: 1872 };
 
-const libBook1 = new LibraryBook(book1);
-const libBook2 = new LibraryBook(book2);
-const libBook3 = new LibraryBook(book3);
+const bookRepo = new Repository<Book>([book1, book2]);
 
-libBook1.borrow('Анна');
-libBook2.borrow('Николай');
-libBook3.borrow('Мария');
+bookRepo.add({ title: 'Бесы', author: 'Ф. М. Достоевский', year: 1872 });
+
+const updatedBook = updateBook(book1, { year: 1881 });
+console.log('Updated Book:', updatedBook);
+
+const readonlyBooks = getReadonlyBooks(bookRepo);
+console.log('Readonly Books:', readonlyBooks);
+
+
