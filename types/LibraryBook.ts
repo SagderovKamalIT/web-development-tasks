@@ -1,5 +1,5 @@
-import type { Book } from './Book.js';
-import type { Borrowable } from './Borrowable.js';
+import type { Book } from './Book';
+import type { Borrowable } from './Borrowable';
 
 export class LibraryBook implements Borrowable {
   constructor(public info: Book) {}
