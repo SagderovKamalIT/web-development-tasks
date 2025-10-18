@@ -8,3 +8,4 @@ function updateBook(book, updates) {
 function getReadonlyBooks(repo) {
     return repo.getAll();
 }
+
