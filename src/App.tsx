@@ -5,6 +5,7 @@ import QuadraticEquation from "./components/QuadraticEquation";
 import SumSquare from "./components/SumSquare";
 import WaterFormula from "./components/WaterFormula";
 import Logarithm from "./components/Logarithm";
+import CurrencyInput from "./components/CurrencyInput";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <SumSquare />
       <WaterFormula />
       <Logarithm />
+      <CurrencyInput />
     </ol>
   );
 }
